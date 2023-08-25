@@ -15,10 +15,17 @@ h2:nth-of-type(2) {
     color: #43dde6;
 }
 
+.button-container {
+    display: flex;
+}
+
 button {
+    flex:1;
     border-color: #43dde6;
+    max-width: 200px;
     font-size: 130px;
     border-radius: 5%;
+    cursor: pointer;
 }
 
 h3:nth-of-type(4) {
