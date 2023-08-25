@@ -3,16 +3,24 @@ let playerScore = 0;
 let computerScore =0;
 
 function Game (playerchoice, randomComputerSelection) {
+    clearConsole();
     logToConsole(playerchoice + " vs " + randomComputerSelection);
     playRound(playerchoice, randomComputerSelection);
     keepScore();
 }
 
+function clearConsole() {
+    while(consoleMessages.firstChild) {
+        consoleMessages.removeChild(consoleMessages.firstChild);
+    }
+}
+
 function logToConsole(message) {
-    const logElement = document.createElement("p");
+    const logElement = document.createElement("h3");
     logElement.textContent = message;
     consoleMessages.appendChild(logElement);
 }
+
 
 function getComputerChoice() {
     const choices = ["Rock", "Paper", "Scissors"];
@@ -61,9 +69,9 @@ function keepScore() {
     logToConsole("Player " + playerScore + " vs " + computerScore + " Computer");
     if (playerScore === 5 || computerScore === 5) {
         if (playerScore === 5) {
-            logToConsole("Player wins! It's your lucky day. Go buy some lottos!");
+            logToConsole("Player wins! 💪 It's your lucky day. Go buy some lottos!");
         } else {
-            logToConsole("Computer wins! It's okay. Better luck next time!");
+            logToConsole("Computer wins! 😅 It's okay. Better luck next time!");
         }
         // Reset the scores to 0
         playerScore = 0;
