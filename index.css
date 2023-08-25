@@ -28,6 +28,7 @@ button {
     cursor: pointer;
     text-align: center;
     vertical-align: middle;
+    line-height: 1;
 }
 
 h3:nth-of-type(4) {
