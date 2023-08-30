@@ -29,6 +29,9 @@ button {
     text-align: center;
     vertical-align: middle;
     line-height: 1;
+    display: flex; /* Add this line to enable flex behavior */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
 
 h3:nth-of-type(4) {
