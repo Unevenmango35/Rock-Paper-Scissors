@@ -32,6 +32,7 @@ button {
     display: flex; /* Add this line to enable flex behavior */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
+    flex-direction: row;
 }
 
 h3:nth-of-type(4) {
