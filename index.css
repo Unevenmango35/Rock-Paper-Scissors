@@ -16,7 +16,7 @@ h2:nth-of-type(2) {
 }
 
 .button-container {
-    display: flex;
+    display: inline-flex;
 }
 
 button {
@@ -29,7 +29,7 @@ button {
     text-align: center;
     vertical-align: middle;
     line-height: 1;
-    
+    display: inline-flex;
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     flex-direction: row;
